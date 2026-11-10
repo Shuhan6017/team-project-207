@@ -12,7 +12,7 @@
 
 ## Project Description
 
-### Domain: Data Analyses Visualizer
+### Domain: Data Visualizer
 
 A Data Analyses Visualizer that takes in .json or .csv files as input data, do some magic, and visualize it using the appropriate plots/graphs.
 
@@ -93,19 +93,23 @@ Extensions:
 
 | Team Member | MVP Use Case |
 |-------------|--------------|
-| Name | Use Case |
-| Name | Use Case |
-| Shaorui Wu | Use Case 3|
+| Sheng-Chieh Huang | Use Case 1 |
+| Shuhan Yuan | Use Case 2 |
+| Shaorui Wu | Use Case 3 |
 
 ---
 
 ## Entities
 
-### Entity 1
+### Colour
 
-### Entity 2
+### Shapes
 
-(Add additional entities as needed.)
+
+
+
+
+
 
 ---
 
