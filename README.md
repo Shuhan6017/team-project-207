@@ -35,6 +35,20 @@ A Data Analyses Visualizer that takes in .json or .csv files as input data, do s
 ### Use Case 1
 
 ### Use Case 2
+Name: Data Customization
+Primary actor: User customizing data
+Preconditions: data has been imported, data can be analyzed, information of customization has been give
+trigger: the user ask the system to customize the data
+success outcome: the visualization has colour and shapes for each different category like how the user asks
+Main Success Scenario: 
+1. The user has selects colour and shapes for different categories of the data (men(blue) vs women(red))
+2. The system records the input and finds the different category
+3. The system uses swift to change the output visualization of the data
+4. The visualization includes the colour and shapes the user asks for
+
+Extensions:
+None
+
 
 ### Use Case 3
 
