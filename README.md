@@ -33,6 +33,25 @@ A Data Analyses Visualizer that takes in .json or .csv files as input data, do s
 ## Use Cases
 
 ### Use Case 1
+Name: Import .json / .csv data.
+Primary Actor: User importing their data.
+Preconditions: 
+- The user's data format follows our convention.
+- The user's data file is of type .json or .csv.
+Trigger: The user drags the file onto the workspace.
+Success Outcome: The data is successfully parsed into a Map.
+Main Success Scenario:
+1. The user drags the file onto the workspace.
+2. The system checks if the file is a .json or .csv file.
+3. The system checks if the format is in our convention.
+4. The system processes the data and parses them into a Map.
+5. The system notifies the user the data is successfully parsed via a toast notification.
+Extensions:
+- 2a. File is flagged to not be a .json or .csv file.
+i. The system notifies the user the data is in the wrong file type.
+- 3a. File's format is flagged to not be in our convention.
+i. The system notifies the user the data is in the wrong file type.
+
 
 ### Use Case 2
 
