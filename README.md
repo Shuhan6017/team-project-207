@@ -70,6 +70,20 @@ None
 
 
 ### Use Case 3
+Name: Share analysis artifact
+Primary actor:  Data analyst, stakeholder
+Pre:
+Trigger: The user have finished analyzing data and want to preserve or share current work.
+Main success scenarios: 
+1.The user asked to save or export for the data set
+2.The system (transfer to some form e.g pdf....)
+3. the system write the files to the chosen location
+Extensions:
+2a. The storage was unavailable
+3a. The file name already exist
+
+
+
 
 (Add additional use cases as needed.)
 
@@ -81,7 +95,7 @@ None
 |-------------|--------------|
 | Name | Use Case |
 | Name | Use Case |
-| Name | Use Case |
+| Shaorui Wu | Use Case 3|
 
 ---
 
