@@ -113,15 +113,21 @@ Extensions:
 
 **Extensions:**
 **7a.** The comparison value is incompatible with the selected column's data type.
+
    i. The system notifies the user that the comparison value is invalid.
+
    ii. The user is prompted to enter a valid value.
 
 **8a.** No rows satisfy the filtering condition.
+
    i. The system displays an empty filtered dataset.
+
    ii. The system notifies the user that no matching records were found.
 
 **8b.** The filtering operation fails.
+
    i. The system notifies the user that filtering could not be completed.
+
    ii. The original dataset remains unchanged.
 
 (Add additional use cases as needed.)
