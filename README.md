@@ -26,6 +26,8 @@ A Data Analyses Visualizer that takes in .json or .csv files as input data, do s
 
 ### User Story 3, I want to save my cleaned dataset and charts so I can revisit or share my analysis later
 
+### As a user, I want to filter my imported dataset based on specific conditions so that I can focus on relevant subsets of data during my analysis.
+
 (Add additional user stories as needed.)
 
 ---
@@ -83,7 +85,50 @@ Extensions:
 3a. The file name already exist
 
 
+### Use Case 4
 
+**Name:** Filter Dataset
+
+**Primary Actor:** User filtering an imported dataset.
+
+**Preconditions:**
+- The user has successfully imported a dataset.
+- The dataset contains at least one column that can be filtered.
+
+**Trigger:** The user selects the option to filter the imported dataset.
+
+**Success Outcome:** The system displays a filtered version of the dataset containing only rows that satisfy the user's specified filtering condition. The original dataset remains unchanged.
+
+**Main Success Scenario:**
+1. The user selects the option to filter the dataset.
+2. The system displays the available columns in the imported dataset.
+3. The user selects a column to filter.
+4. The system displays the available filtering operators based on the selected column's data type.
+5. The user selects a filtering operator and specifies a comparison value.
+6. The user confirms the filtering condition.
+7. The system validates the filtering condition and comparison value.
+8. The system processes the dataset and selects all rows satisfying the filtering condition.
+9. The system displays the resulting filtered dataset.
+10. The system notifies the user that filtering was completed successfully.
+
+**Extensions:**
+**7a.** The comparison value is incompatible with the selected column's data type.
+
+   i. The system notifies the user that the comparison value is invalid.
+
+   ii. The user is prompted to enter a valid value.
+
+**8a.** No rows satisfy the filtering condition.
+
+   i. The system displays an empty filtered dataset.
+
+   ii. The system notifies the user that no matching records were found.
+
+**8b.** The filtering operation fails.
+
+   i. The system notifies the user that filtering could not be completed.
+
+   ii. The original dataset remains unchanged.
 
 (Add additional use cases as needed.)
 
@@ -96,6 +141,7 @@ Extensions:
 | Sheng-Chieh Huang | Use Case 1 |
 | Shuhan Yuan | Use Case 2 |
 | Shaorui Wu | Use Case 3 |
+| Alexander Abesteh | Use Case 4 |
 
 ---
 
