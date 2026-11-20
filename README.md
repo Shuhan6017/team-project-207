@@ -24,7 +24,7 @@ A Data Analyses Visualizer that takes in .json or .csv files as input data, do s
 
 ### As a user, I want to have different shapes and colour that represents certain categories to better understand my data.
 
-### User Story 3, I want to save my cleaned dataset and charts so I can revisit or share my analysis later
+### As a user, I want to save my cleaned dataset and charts so I can revisit or share my analysis later
 
 ### As a user, I want to filter my imported dataset based on specific conditions so that I can focus on relevant subsets of data during my analysis.
 
@@ -42,7 +42,7 @@ Preconditions:
 - The user's data file is of type .json or .csv.
 Trigger: The user drags the file onto the workspace.
 Success Outcome: The data is successfully parsed into a Map.
-data_visualizer_app.Main Success Scenario:
+Main Success Scenario:
 1. The user drags the file onto the workspace.
 2. The system checks if the file is a .json or .csv file.
 3. The system checks if the format is in our convention.
@@ -61,10 +61,10 @@ Primary actor: User customizing data
 Preconditions: data has been imported, data can be analyzed, information of customization has been give
 trigger: the user ask the system to customize the data
 success outcome: the visualization has colour and shapes for each different category like how the user asks
-data_visualizer_app.Main Success Scenario: 
+Main Success Scenario: 
 1. The user has selects colour and shapes for different categories of the data (men(blue) vs women(red))
 2. The system records the input and finds the different category
-3. The system uses swift to change the output visualization of the data
+3. The system uses Java Swing to update the output visualization of the data
 4. The visualization includes the colour and shapes the user asks for
 
 Extensions:
@@ -76,7 +76,7 @@ Name: Share analysis artifact
 Primary actor:  Data analyst, stakeholder
 Pre:
 Trigger: The user have finished analyzing data and want to preserve or share current work.
-data_visualizer_app.Main success scenarios: 
+Main Success Scenario: 
 1.The user asked to save or export for the data set
 2.The system (transfer to some form e.g pdf....)
 3. the system write the files to the chosen location
@@ -99,7 +99,7 @@ Extensions:
 
 **Success Outcome:** The system displays a filtered version of the dataset containing only rows that satisfy the user's specified filtering condition. The original dataset remains unchanged.
 
-**data_visualizer_app.Main Success Scenario:**
+**Main Success Scenario:**
 1. The user selects the option to filter the dataset.
 2. The system displays the available columns in the imported dataset.
 3. The user selects a column to filter.
