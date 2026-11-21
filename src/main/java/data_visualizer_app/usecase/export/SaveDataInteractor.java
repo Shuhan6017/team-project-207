@@ -2,18 +2,18 @@ package data_visualizer_app.usecase.export;
 
 public class SaveDataInteractor implements SaveDataInputBoundary {
     private final SaveDataAccessInterface dataAccessObject;
-    private final SaveDataOutputBoundary userpresenter;
+    private final SaveDataOutputBoundary userPresenter;
 
     public SaveDataInteractor(SaveDataAccessInterface dataAccessObject,
-                              SaveDataOutputBoundary userpresenter) {
+                              SaveDataOutputBoundary userPresenter) {
         this.dataAccessObject = dataAccessObject;
-        this.userpresenter = userpresenter;
+        this.userPresenter = userPresenter;
     }
 
     @Override
     public void excute(SaveDataInputData saveDataInputData) {
-        if (saveDataInputData.getFilePath() == null ||
-                saveDataInputData.getFilePath().trim().isEmpty()) {
+        if (saveDataInputData.getFilepath() == null ||
+                saveDataInputData.getFilepath().trim().isEmpty()) {
             userPresenter.prepareFailView("Export failed: File path cannot be empty.");
         }
         else if (saveDataInputData.getCleanedData() == null ||
@@ -22,11 +22,11 @@ public class SaveDataInteractor implements SaveDataInputBoundary {
         }
         else {
             dataAccessObject.saveData(saveDataInputData.getCleanedData(),
-                    saveDataInputData.getFilePath());
+                    saveDataInputData.getFilepath());
 
         }
 
-        final SaveDataOutputData saveDataOutputData = new SaveDataOutputData("Data exported successfully to: " + saveDataInputData.getFilePath());
+        final SaveDataOutputData saveDataOutputData = new SaveDataOutputData("Data exported successfully to: " + saveDataInputData.getFilepath());
         userPresenter.prepareSuccessView(saveDataOutputData);
     }
 }
