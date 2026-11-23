@@ -11,6 +11,7 @@ public class SaveDataInputData {
     }
 
     public List<List<String>> getCleanedData() {
+
         return cleanedData;
     }
     public String getFilepath() {
