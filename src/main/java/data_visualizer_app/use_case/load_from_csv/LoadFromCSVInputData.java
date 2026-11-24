@@ -1,4 +1,4 @@
-package data_visualizer_app.load_from_csv;
+package data_visualizer_app.use_case.load_from_csv;
 
 public class LoadFromCSVInputData
 {

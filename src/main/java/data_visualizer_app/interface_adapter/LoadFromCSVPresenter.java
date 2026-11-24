@@ -1,8 +1,8 @@
-package data_visualizer_app.load_from_csv;
+package data_visualizer_app.interface_adapter;
 
-import data_visualizer_app.interface_adapter.ViewManagerModel;
+import data_visualizer_app.use_case.load_from_csv.LoadFromCSVOutputData;
 
-public class LoadFromCSVPresenter implements ILoadFromCSVOutputBoundary
+public class LoadFromCSVPresenter implements LoadFromCSVOutputBoundary
 {
     private final LoadFromCSVViewModel loadFromCSVViewModel;
     private final ViewManagerModel viewManagerModel;
@@ -14,7 +14,7 @@ public class LoadFromCSVPresenter implements ILoadFromCSVOutputBoundary
     }
 
     @Override
-    public void prepareSuccessView()
+    public void prepareSuccessView(LoadFromCSVOutputData csvContentPayload)
     {
         // Do success logic and updates
 

@@ -1,10 +1,14 @@
-package data_visualizer_app.load_from_csv;
+package data_visualizer_app.view;
+
+import data_visualizer_app.interface_adapter.LoadFromCSVController;
+import data_visualizer_app.interface_adapter.LoadFromCSVViewModel;
+import data_visualizer_app.interface_adapter.LoadFromCSVViewModelListener;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class LoadFromCSVView extends JPanel implements ActionListener, ILoadFromCSVViewModelListener
+public class LoadFromCSVView extends JPanel implements ActionListener, LoadFromCSVViewModelListener
 {
     private final LoadFromCSVViewModel loadFromCSVViewModel;
     private LoadFromCSVController loadFromCSVController;
